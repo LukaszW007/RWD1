@@ -1,0 +1,276 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+.col-offset-12 {
+    margin-left: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery {
+    position: relative;
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+.map {
+    padding: 10px;
+}
+
+.map > img {
+    width: 100%;
+}
+
+/* menu */
+
+header {
+    display: flex;
+}
+
+.logo {
+    border: 1px solid;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+nav {
+    flex: 3;
+    background-color: #4577ED;
+}
+
+nav > ul {
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: inline-block;
+    background-color: #4577ED;
+    text-align: center;
+    border: 1px solid;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3255a7;
+}
+
+nav ul ul li {
+    display: block;
+    text-align: left;
+    background-color: #4577ED;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav ul ul li a {
+    padding: 0;
+}
+
+nav ul ul li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+nav ul ul {
+    border: 1px dotted white;
+}
+
+nav li ul {
+    display: block;
+    position: absolute;
+    padding: 0;
+    border: 1px solid;
+}
+
+nav li:hover ul {
+    visibility: visible;
+    /* co oznacza transition-delay i kiedy powinno sie to stosowac?*/
+}
+
+nav li ul {
+    visibility: hidden;
+    /*transition: all 0.3s ease-in-out 1s; czego dotyczy all 0.3s i dlaczego podaje sie te dwa parametry?*/
+    transition: ease-in-out 1s;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    header {
+        display: block;
+    }
+
+    nav > ul {
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+}
